@@ -3,13 +3,11 @@
 __BACKWARDS INCOMPATIBILITIES:__
  * config: Nomad no longer parses Atlas configuration stanzas. Atlas has been
    deprecated since earlier this year. If you have an Atlas stanza in your
-   config file it will have to be removed. 
+   config file it will have to be removed.
 
 IMPROVEMENTS:
  * api: Allocations now track and return modify time in addition to create time.[GH-3446]
- * api: Introduced new fields to track details and display message for task events,
-   and deprecated redundant existing fields. [GH-3399]
- * cli: Allocation create and modify times are displayed in a human readable 
+ * cli: Allocation create and modify times are displayed in a human readable
    relative format like `6 h ago`.[GH-3449]
  * core: Allow agents to be run in `rpc_upgrade_mode` when migrating a cluster
    to TLS rather than changing `heartbeat_grace`.
@@ -23,7 +21,7 @@ BUG FIXES:
    timeout error [GH-3402]
  * client: Fix allocation accounting in GC and trigger GCs on allocation
    updates. [GH-3445]
- 
+
 
 ## 0.7.0 (November 1, 2017)
 
